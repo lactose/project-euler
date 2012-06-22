@@ -18,11 +18,22 @@ def d(n)
 end
 
 dd = {}
+de= {}
 s=0
 (1..LIMIT).each do |i|
   dd[i] = i if d(i) > i
-  s+=i if not dd.any? {|j| dd.has_key?((dd[j]-i))}
 end
+dd.each do |k, v|
+  dd.each do |k2, v2|
+    p = v2 + v
+    de[p]=p
+  end
+end
+(1..LIMIT).each do |i|
+  s+= i if de[i].nil? 
+end
+
+puts s
 puts s
 
 
