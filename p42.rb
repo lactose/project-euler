@@ -17,4 +17,4 @@ while d.size > 0
   ans += 1 if is_triangle(s)
 end
 
-puts ans
+puts ans 
