@@ -11,8 +11,8 @@ def p56(c, m)
 
   v = 0
   max = 0
-  (1..m).step(c) do |i|
-    (1..m).step(c) do |j|
+  (c..m).each do |i|
+    (c..m).each do |j|
       v = sum_digits(i**j)
       max = v unless max > v
     end
@@ -22,4 +22,8 @@ def p56(c, m)
 
 end
 
-puts p56(1, 100)
+#for 100
+puts p56(90, 99)
+
+#for 200
+puts p56(190, 199)
