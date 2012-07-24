@@ -1,1 +1,2 @@
-CFLAGS=-Wall -g
+CC=gcc
+CFLAGS=-Wall -g -lm
